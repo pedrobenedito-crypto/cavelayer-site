@@ -35,14 +35,18 @@ img{image-rendering:pixelated}
 .mc-btn:hover,.mc-btn:focus-visible{color:#ffffa0;outline:2px solid #fff;outline-offset:-2px;filter:brightness(1.12)}
 
 .fog-hills{position:absolute;left:0;right:0;bottom:40px;height:420px;z-index:0;pointer-events:none;background:url(../assets/neblina.jpg) 50% 100%/auto 100% repeat-x;opacity:.5;filter:brightness(.66) saturate(1.1);-webkit-mask-image:linear-gradient(transparent 0%,#000 32%);mask-image:linear-gradient(transparent 0%,#000 32%)}
-.deco{position:absolute;width:64px;height:64px;z-index:2;filter:brightness(.55) saturate(.85)}
+.deco{position:absolute;width:64px;height:64px;z-index:3 !important;filter:brightness(.55) saturate(.85)}
 .grass-edge{position:relative;z-index:1;height:256px;background:url(../assets/terreno.png) 0 0/2560px 256px repeat-x;image-rendering:pixelated;filter:brightness(.55) saturate(.85)}
 
 .torch{width:64px;height:64px;position:absolute;background:url(../assets/tocha-caverna.png) 0 0/64px 64px no-repeat;image-rendering:pixelated}
 .torch::before{content:"";position:absolute;left:-58px;top:-62px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(255,190,70,.38) 0%,rgba(255,150,40,.16) 35%,rgba(255,140,30,0) 70%);pointer-events:none;animation:torchflick 4.5s ease-in-out infinite}
-.surf-torch{z-index:2;background-image:url(../assets/tocha.png)}
+.surf-torch{z-index:3;background-image:url(../assets/tocha.png)}
 .surf-torch::before{left:-128px;top:-134px;width:320px;height:320px;background:radial-gradient(circle,rgba(255,180,70,.42) 0%,rgba(255,140,40,.18) 30%,rgba(255,120,30,0) 65%)}
 @keyframes torchflick{0%,100%{opacity:1;transform:scale(1)}30%{opacity:.92;transform:scale(.98)}55%{opacity:.98;transform:scale(1.01)}80%{opacity:.9;transform:scale(.97)}}
+
+/* esqueleto andando na grama (sprites renderizados do esqueleto.blend) */
+.skeleton{position:absolute;left:0;bottom:256px;width:63px;height:128px;z-index:2;pointer-events:none;display:none;background:url(../assets/esqueleto.png) 0 0/1512px 128px no-repeat;filter:brightness(.75) saturate(.9);animation:skelwalk .8s steps(24) infinite;will-change:transform}
+@keyframes skelwalk{to{background-position:-1512px 0}}
 
 /* ---------- camadas ---------- */
 .wrap{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:32px;position:relative}

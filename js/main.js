@@ -158,7 +158,38 @@
   }
   window.addEventListener('resize', placeMoon);
 
+  /* ---------- esqueleto andando pela grama ---------- */
+  // alturas (em blocos) de cada coluna do terreno; o desenho se repete a cada 40 colunas de 64px
+  var ALTURAS = [2,3,4,4,4,4,3,3,4,4,4,3,3,2,2,2,1,1,1,2,3,2,3,2,2,1,1,2,1,1,2,3,2,3,3,3,2,3,3,2];
+  function startSkeleton() {
+    var sk = document.getElementById('skeleton'), sec = document.getElementById('topo');
+    if (!sk || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var VEL = 137, INTERVALO = 5 * 60 * 1000, PRIMEIRA = 5000;   // anda a 137 px/s; aparece a cada 5 minutos
+    function ground(px) {
+      var col = Math.floor((px + 31) / 64) % 40; if (col < 0) col += 40;
+      return ALTURAS[col] * 64;
+    }
+    function passeio() {
+      var x = sec.offsetWidth + 40, y = null, last = null;
+      sk.style.display = 'block';
+      function frame(t) {
+        if (last == null) last = t;
+        var dt = Math.min(0.05, (t - last) / 1000); last = t;
+        x -= VEL * dt;
+        if (x < -80) { sk.style.display = 'none'; setTimeout(passeio, INTERVALO); return; }
+        var alvo = ground(x);
+        y = (y == null) ? alvo : y + (alvo - y) * Math.min(1, dt * 14);
+        sk.style.transform = 'translateX(' + Math.round(x) + 'px)';
+        sk.style.bottom = Math.round(y) + 'px';
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+    setTimeout(passeio, PRIMEIRA);
+  }
+
   /* ---------- início ---------- */
+  startSkeleton();
   setupForm();
   onScroll(); placeMoon();
   getJSON('content/estilo.json').then(applyStyle).catch(function () {});
