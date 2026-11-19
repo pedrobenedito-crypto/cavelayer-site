@@ -1,26 +1,49 @@
 {
-  "frase_amarela": "Feito por quem joga!",
+  "frase_amarela": "FAZEMOS SEU PROPRIO MOD!",
   "subtitulo": "MOD STUDIO",
   "link_discord": "https://discord.gg/SEU-CONVITE",
   "link_instagram": "https://instagram.com/SEU-PERFIL",
   "mods_titulo": "Mods à venda",
   "mods_texto": "Escolha um mod, clique em Comprar e pague pelo link seguro.",
   "como_funciona": [
-    { "titulo": "Escolha o mod", "texto": "Veja os mods na camada de cima e escolha o que quiser." },
-    { "titulo": "Faça o pagamento", "texto": "Pague com [FORMAS DE PAGAMENTO, ex.: Pix ou cartão]." },
-    { "titulo": "Baixe e jogue", "texto": "Receba o arquivo .jar, coloque na pasta mods do [LOADER, ex.: Forge ou Fabric] e entre no jogo." }
+    {
+      "titulo": "Escolha o mod",
+      "texto": "Veja os mods na camada de cima e escolha o que quiser."
+    },
+    {
+      "titulo": "Faça o pagamento",
+      "texto": "Pague com [FORMAS DE PAGAMENTO, ex.: Pix ou cartão]."
+    },
+    {
+      "titulo": "Baixe e jogue",
+      "texto": "Receba o arquivo .jar, coloque na pasta mods do [LOADER, ex.: Forge ou Fabric] e entre no jogo."
+    }
   ],
   "encomenda_titulo": "Quer um mod que ainda não existe?",
   "encomenda_texto": "Conte a sua ideia e a gente responde com prazo e orçamento.",
   "encomenda_sucesso": "Recebemos sua ideia. Você vai receber uma resposta em [PRAZO DE RESPOSTA].",
-  "versoes": ["1.20.1"],
+  "versoes": [
+    "1.20.1"
+  ],
   "galeria_titulo": "Os mods em ação",
   "galeria": [],
   "trailer_youtube": "",
   "duvidas": [
-    { "pergunta": "Em quais versões os mods funcionam?", "resposta": "[Versões e loaders suportados, ex.: 1.20.1 com Forge.]" },
-    { "pergunta": "Como eu recebo o mod depois de pagar?", "resposta": "[Explique a entrega: link por e-mail, Discord, área do cliente…]" },
-    { "pergunta": "Posso usar em servidor ou modpack?", "resposta": "[Regras de licença e uso.]" },
-    { "pergunta": "E se o mod der problema?", "resposta": "[Política de suporte e reembolso.]" }
+    {
+      "pergunta": "Em quais versões os mods funcionam?",
+      "resposta": "[Versões e loaders suportados, ex.: 1.20.1 com Forge.]"
+    },
+    {
+      "pergunta": "Como eu recebo o mod depois de pagar?",
+      "resposta": "[Explique a entrega: link por e-mail, Discord, área do cliente…]"
+    },
+    {
+      "pergunta": "Posso usar em servidor ou modpack?",
+      "resposta": "[Regras de licença e uso.]"
+    },
+    {
+      "pergunta": "E se o mod der problema?",
+      "resposta": "[Política de suporte e reembolso.]"
+    }
   ]
 }
