@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cave Layer — Mod Studio</title>
+<meta name="description" content="Cave Layer: mods para Java Edition, feitos por quem joga.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-shade" id="topShade" aria-hidden="true"></div>
+<div class="depth" aria-live="polite" id="depth">Y: 64 · Superfície</div>
+
+<!-- SUPERFÍCIE -->
+<section id="topo" class="sky">
+  <div class="moon-pulse" id="moonPulse" aria-hidden="true"></div>
+  <div class="hero">
+    <div class="logo-wrap" id="logoWrap">
+      <div class="logo-box" role="img" aria-label="Cave Layer">
+        <img class="logo-img" src="assets/logo.png" alt="">
+        <span class="splash" data-text="frase_amarela" aria-hidden="true">Feito por quem joga!</span>
+      </div>
+    </div>
+    <div class="hero-cta" id="heroCta">
+      <span class="subtitle" data-text="subtitulo">MOD STUDIO</span>
+      <nav class="mc-menu" aria-label="Menu principal">
+        <a href="#mods" class="mc-btn">Ver os mods</a>
+        <a href="#encomenda" class="mc-btn">Pedir um mod</a>
+        <a href="#" class="mc-btn" data-href="link_discord" target="_blank" rel="noopener">Comunidade</a>
+        <div class="mc-row">
+          <a href="#como-funciona" class="mc-btn">Como funciona</a>
+          <a href="#duvidas" class="mc-btn">Dúvidas</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="fog-hills" aria-hidden="true"></div>
+  <img class="deco" src="assets/azaleia.png" alt="" style="left:128px;bottom:256px;z-index:1">
+  <img class="deco" src="assets/azaleia.png" alt="" style="left:960px;bottom:128px;z-index:1">
+  <img class="deco" src="assets/grama.png" alt="" style="left:0;bottom:128px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:256px;bottom:256px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:448px;bottom:192px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:576px;bottom:256px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:832px;bottom:128px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:1024px;bottom:64px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:1344px;bottom:128px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:1536px;bottom:128px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:1728px;bottom:128px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:1920px;bottom:128px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:2112px;bottom:192px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:2240px;bottom:192px">
+  <img class="deco" src="assets/grama.png" alt="" style="left:2432px;bottom:192px">
+  <div class="torch surf-torch" aria-hidden="true" style="left:320px;bottom:256px"></div>
+  <div class="torch surf-torch" aria-hidden="true" style="left:704px;bottom:192px"></div>
+  <div class="torch surf-torch" aria-hidden="true" style="left:1152px;bottom:64px"></div>
+  <div class="grass-edge" aria-hidden="true"></div>
+</section>
+
+<!-- TERRA: MODS -->
+<section id="mods" class="dirt">
+  <div class="wrap">
+    <div class="mods-head">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span class="tag-layer">CAMADA 1 · TERRA</span>
+        <h2 class="section-title" data-text="mods_titulo">Mods à venda</h2>
+      </div>
+      <p data-text="mods_texto"></p>
+    </div>
+    <div class="grid-mods" id="modsGrid"></div>
+  </div>
+</section>
+<div class="dirt-edge" aria-hidden="true"></div>
+
+<div class="stone-wall">
+  <!-- PEDRA: COMO FUNCIONA -->
+  <section id="como-funciona" class="layer-stone">
+    <div class="wrap">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span class="tag-layer">CAMADA 2 · PEDRA</span>
+        <h2 class="section-title">Como funciona</h2>
+      </div>
+      <div class="steps" id="steps"></div>
+    </div>
+  </section>
+
+  <!-- CAVERNAS: ENCOMENDA -->
+  <section id="encomenda" class="layer-deep">
+    <div class="torch hide-sm" aria-hidden="true" style="top:120px;left:5%"></div>
+    <div class="torch hide-sm" aria-hidden="true" style="top:120px;right:5%"></div>
+    <div class="order">
+      <div class="order-info">
+        <span class="tag-layer">CAMADA 3 · CAVERNAS</span>
+        <h2 class="section-title" style="text-shadow:none" data-text="encomenda_titulo"></h2>
+        <p data-text="encomenda_texto"></p>
+        <div class="slots" aria-hidden="true">
+          <div class="slot"><img src="assets/espada.png" alt=""></div>
+          <div class="slot"><img src="assets/lanca.png" alt=""></div>
+          <div class="slot"><img src="assets/diamante.png" alt=""></div>
+        </div>
+      </div>
+      <div class="order-box">
+        <div id="orderDone" class="hidden" style="display:flex;flex-direction:column;gap:12px;padding:24px 0">
+          <h3 style="margin:0;font-size:28px;color:#4fe3d9">Pedido enviado!</h3>
+          <p style="margin:0;color:#d4d4d8;line-height:1.5" data-text="encomenda_sucesso"></p>
+          <button type="button" class="card-btn" id="orderAgain" style="align-self:flex-start">Enviar outra ideia</button>
+        </div>
+        <!-- Formulário: funciona sozinho no Netlify (Netlify Forms) -->
+        <form id="orderForm" name="encomenda" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="encomenda">
+          <p class="hidden"><label>Não preencha: <input name="bot-field"></label></p>
+          <div class="field"><label for="nome">Seu nome ou nick</label><input id="nome" name="nome" type="text" required></div>
+          <div class="field"><label for="contato">E-mail ou Discord</label><input id="contato" name="contato" type="text" required></div>
+          <div class="field"><label for="versao">Versão do jogo</label><select id="versao" name="versao"></select></div>
+          <div class="field"><label for="ideia">Descreva o mod</label><textarea id="ideia" name="ideia" rows="4" required></textarea></div>
+          <button type="submit" class="card-btn" style="align-self:flex-start">Enviar pedido</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINÉRIOS: GALERIA -->
+  <section class="layer-ores">
+    <div class="wrap">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span class="tag-layer" style="color:#4fe3d9">CAMADA 4 · MINÉRIOS</span>
+        <h2 class="section-title" style="text-shadow:none" data-text="galeria_titulo"></h2>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div id="trailer"></div>
+    </div>
+  </section>
+
+  <!-- PROFUNDEZAS: DÚVIDAS -->
+  <section id="duvidas" class="layer-deepest">
+    <div class="faq">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span class="tag-layer" style="color:#ff8a3d">CAMADA 5 · PROFUNDEZAS</span>
+        <h2 class="section-title" style="text-shadow:none">Dúvidas</h2>
+      </div>
+      <div id="faq" style="display:flex;flex-direction:column;gap:24px"></div>
+    </div>
+  </section>
+</div>
+
+<div class="bedrock-floor" aria-hidden="true"></div>
+<footer class="void">
+  <div class="foot">
+    <div class="foot-left">
+      <img class="foot-logo" src="assets/logo.png" alt="Cave Layer">
+      <span style="color:#ff8a3d;font-size:15px">Y: -64 · Você chegou ao fundo.</span>
+      <small>Projeto não oficial. Não é aprovado nem associado à Mojang ou à Microsoft. Fonte “Minecraft” por Pwnage_Block, licença CC BY-SA 3.0.</small>
+    </div>
+    <div class="foot-links">
+      <a href="#topo">Voltar à superfície</a>
+      <a href="#mods">Mods</a>
+      <a href="#" data-href="link_discord" target="_blank" rel="noopener">Discord</a>
+      <a href="#" data-href="link_instagram" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

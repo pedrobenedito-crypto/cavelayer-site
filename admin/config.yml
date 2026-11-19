@@ -1,0 +1,88 @@
+# Painel de edição da Cave Layer (Sveltia CMS)
+# Troque USUARIO/REPOSITORIO pelo seu repositório no GitHub (ex.: squareguy/cavelayer)
+backend:
+  name: github
+  repo: USUARIO/REPOSITORIO
+  branch: main
+
+site_url: /
+display_url: /
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: loja
+    label: Loja
+    files:
+      - name: mods
+        label: Mods à venda
+        file: content/mods.json
+        format: json
+        fields:
+          - name: mods
+            label: Mods
+            label_singular: Mod
+            widget: list
+            summary: "{{fields.nome}} — {{fields.preco}}"
+            fields:
+              - { name: nome, label: Nome do mod, widget: string }
+              - { name: descricao, label: Descrição curta, widget: text }
+              - { name: preco, label: Preço (como vai aparecer), widget: string, hint: "Ex.: R$ 14,90" }
+              - name: categoria
+                label: Categoria
+                widget: select
+                options: [Aventura, Magia, Tecnologia, Mundo / Biomas, Mobs, Utilidade]
+              - { name: versao, label: Versão do jogo, widget: string, default: "1.20.1" }
+              - { name: imagem, label: Imagem do mod, widget: image, required: false }
+              - { name: link_compra, label: Link de pagamento, widget: string, required: false, hint: "Link do Mercado Pago, Hotmart, Kiwify, Gumroad… Vazio = botão 'Em breve'." }
+              - { name: visivel, label: Mostrar no site, widget: boolean, default: true, required: false }
+
+  - name: textos
+    label: Textos do site
+    files:
+      - name: site
+        label: Textos, links e dúvidas
+        file: content/site.json
+        format: json
+        fields:
+          - { name: frase_amarela, label: Frase amarela ao lado da logo, widget: string }
+          - { name: subtitulo, label: Subtítulo embaixo da logo, widget: string }
+          - { name: link_discord, label: Link do Discord, widget: string }
+          - { name: link_instagram, label: Link do Instagram, widget: string }
+          - { name: mods_titulo, label: "Mods — título", widget: string }
+          - { name: mods_texto, label: "Mods — texto", widget: text }
+          - name: como_funciona
+            label: Como funciona (passos)
+            label_singular: Passo
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+          - { name: encomenda_titulo, label: "Encomenda — título", widget: string }
+          - { name: encomenda_texto, label: "Encomenda — texto", widget: text }
+          - { name: encomenda_sucesso, label: "Encomenda — mensagem depois de enviar", widget: text }
+          - name: versoes
+            label: Versões no formulário de encomenda
+            label_singular: Versão
+            widget: list
+            field: { name: versao, label: Versão, widget: string }
+          - { name: galeria_titulo, label: "Galeria — título", widget: string }
+          - name: galeria
+            label: Galeria (prints e GIFs)
+            label_singular: Imagem
+            widget: list
+            required: false
+            summary: "{{fields.legenda}}"
+            fields:
+              - { name: imagem, label: Imagem ou GIF, widget: image }
+              - { name: legenda, label: Legenda, widget: string, required: false }
+          - { name: trailer_youtube, label: Link do trailer no YouTube, widget: string, required: false }
+          - name: duvidas
+            label: Dúvidas
+            label_singular: Dúvida
+            widget: list
+            summary: "{{fields.pergunta}}"
+            fields:
+              - { name: pergunta, label: Pergunta, widget: string }
+              - { name: resposta, label: Resposta, widget: text }
