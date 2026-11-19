@@ -6,11 +6,7 @@ backend:
   branch: main
 
 site_url: https://cavelayer-site.netlify.app
-<<<<<<< HEAD
 display_url: https://cavelayer.netlify.app
-=======
-display_url: https://cavelayer-site.netlify.app
->>>>>>> 56e44d3174dca7f437d13210bde78a184f375e80
 media_folder: images/uploads
 public_folder: /images/uploads
 
