@@ -11,12 +11,12 @@
       "visivel": true
     },
     {
-      "nome": "[Nome do mod]",
-      "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]",
-      "preco": "R$ [PREÇO]",
-      "categoria": "Magia",
+      "nome": "Magic Paint Brush",
+      "descricao": "Tudo que você desenha aparece!",
+      "preco": "GRATIS",
+      "categoria": "Utilidade",
       "versao": "1.20.1",
-      "imagem": "",
+      "imagem": "/images/uploads/2026-11-19_17.25.13.png",
       "link_compra": "",
       "visivel": true
     },
