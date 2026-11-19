@@ -1,8 +1,8 @@
 {
   "frase_amarela": "ㅤ",
   "subtitulo": "CONSTRUIMOS SEU PROPRIO MOD!",
-  "link_discord": "https://discord.gg/SEU-CONVITE",
-  "link_instagram": "https://instagram.com/SEU-PERFIL",
+  "link_discord": "-",
+  "link_instagram": "-",
   "mods_titulo": "Mods à venda",
   "mods_texto": "Escolha um mod, clique em Comprar e pague pelo link seguro.",
   "como_funciona": [
@@ -21,9 +21,14 @@
   ],
   "encomenda_titulo": "Quer um mod que ainda não existe?",
   "encomenda_texto": "Conte a sua ideia e a gente responde com prazo e orçamento.",
-  "encomenda_sucesso": "Recebemos sua ideia. Você vai receber uma resposta em [PRAZO DE RESPOSTA].",
+  "encomenda_sucesso": "Recebemos sua ideia. Você vai receber uma resposta em poucas horas.",
   "versoes": [
-    "1.20.1"
+    "1.20.1 Forge",
+    "1.21.1 Forge",
+    "26.3 Forge",
+    "26.2 Forge",
+    "1.21.6 Forge",
+    "1.21.7 Forge"
   ],
   "galeria_titulo": "Os mods em ação",
   "galeria": [],
