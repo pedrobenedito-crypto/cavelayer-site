@@ -5,8 +5,8 @@ backend:
   repo: pedrobenedito-crypto/cavelayer-site
   branch: main
 
-site_url: /
-display_url: /
+site_url: https://cavelayer-site.netlify.app
+display_url: https://cavelayer-site.netlify.app
 media_folder: images/uploads
 public_folder: /images/uploads
 
