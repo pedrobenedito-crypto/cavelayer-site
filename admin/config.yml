@@ -2,7 +2,7 @@
 # Troque USUARIO/REPOSITORIO pelo seu repositório no GitHub (ex.: squareguy/cavelayer)
 backend:
   name: github
-  repo: USUARIO/REPOSITORIO
+  repo: pedrobenedito-crypto/cavelayer-site
   branch: main
 
 site_url: /
