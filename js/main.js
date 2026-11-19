@@ -75,6 +75,13 @@
     });
   }
 
+  /* ---------- aparência (cores e tamanhos do painel) ---------- */
+  function applyStyle(e) {
+    var root = document.documentElement.style, cores = e.cores || {}, tam = e.tamanhos || {};
+    Object.keys(cores).forEach(function (k) { if (cores[k]) root.setProperty('--cor-' + k.replace(/_/g, '-'), cores[k]); });
+    Object.keys(tam).forEach(function (k) { var v = Number(tam[k]); if (v > 0) root.setProperty('--tam-' + k.replace(/_/g, '-'), v + 'px'); });
+  }
+
   /* ---------- mods ---------- */
   function renderMods(data) {
     var grid = document.getElementById('modsGrid');
@@ -154,6 +161,7 @@
   /* ---------- início ---------- */
   setupForm();
   onScroll(); placeMoon();
+  getJSON('content/estilo.json').then(applyStyle).catch(function () {});
   Promise.all([getJSON('content/site.json'), getJSON('content/mods.json')])
     .then(function (res) { renderSite(res[0]); renderMods(res[1]); placeMoon(); })
     .catch(function (e) { console.error('Erro ao carregar o conteúdo', e); });

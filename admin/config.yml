@@ -1,12 +1,12 @@
 # Painel de edição da Cave Layer (Sveltia CMS)
-# Troque USUARIO/REPOSITORIO pelo seu repositório no GitHub (ex.: squareguy/cavelayer)
+# Repositório: pedrobenedito-crypto/cavelayer-site · Site: https://cavelayer-site.netlify.app (troque site_url/display_url se mudar de domínio)
 backend:
   name: github
-  repo: USUARIO/REPOSITORIO
+  repo: pedrobenedito-crypto/cavelayer-site
   branch: main
 
-site_url: /
-display_url: /
+site_url: https://cavelayer-site.netlify.app
+display_url: https://cavelayer.netlify.app
 media_folder: images/uploads
 public_folder: /images/uploads
 
@@ -86,3 +86,39 @@ collections:
             fields:
               - { name: pergunta, label: Pergunta, widget: string }
               - { name: resposta, label: Resposta, widget: text }
+
+  - name: aparencia
+    label: Aparência
+    files:
+      - name: estilo
+        label: Cores e tamanhos dos textos
+        file: content/estilo.json
+        format: json
+        fields:
+          - name: cores
+            label: Cores
+            widget: object
+            fields:
+              - { name: titulo, label: "Títulos (seções, nomes dos mods, perguntas)", widget: color }
+              - { name: texto, label: "Textos e descrições", widget: color }
+              - { name: camada, label: "Etiqueta das camadas (CAMADA 1 · TERRA…)", widget: color }
+              - { name: preco, label: Preço dos mods, widget: color }
+              - { name: botao, label: "Fundo dos botões amarelos (Comprar, Enviar…)", widget: color }
+              - { name: botao_texto, label: Texto dos botões amarelos, widget: color }
+              - { name: frase, label: Frase amarela ao lado da logo, widget: color }
+              - { name: subtitulo, label: "Subtítulo (MOD STUDIO)", widget: color }
+              - { name: menu_texto, label: Texto dos botões do menu de pedra, widget: color }
+              - { name: links, label: Links do rodapé, widget: color }
+          - name: tamanhos
+            label: Tamanhos (em pixels)
+            widget: object
+            fields:
+              - { name: titulo, label: Títulos das seções, widget: number, value_type: int, min: 20, max: 96 }
+              - { name: texto, label: Textos e descrições, widget: number, value_type: int, min: 10, max: 32 }
+              - { name: card_titulo, label: "Nome dos mods / títulos dos passos", widget: number, value_type: int, min: 14, max: 48 }
+              - { name: preco, label: Preço, widget: number, value_type: int, min: 12, max: 48 }
+              - { name: frase, label: Frase amarela, widget: number, value_type: int, min: 12, max: 48 }
+              - { name: subtitulo, label: "Subtítulo (MOD STUDIO)", widget: number, value_type: int, min: 10, max: 48 }
+              - { name: menu, label: Texto dos botões do menu, widget: number, value_type: int, min: 12, max: 36 }
+              - { name: camada, label: Etiqueta das camadas, widget: number, value_type: int, min: 10, max: 32 }
+              - { name: duvida, label: Perguntas das dúvidas, widget: number, value_type: int, min: 12, max: 40 }

@@ -1,0 +1,25 @@
+{
+  "cores": {
+    "titulo": "#ffffff",
+    "texto": "#cfc6b8",
+    "camada": "#f5c542",
+    "preco": "#f5c542",
+    "botao": "#f5c542",
+    "botao_texto": "#1a1410",
+    "frase": "#ffff00",
+    "subtitulo": "#e8ecf6",
+    "menu_texto": "#e0e0e0",
+    "links": "#f5c542"
+  },
+  "tamanhos": {
+    "titulo": 48,
+    "texto": 16,
+    "card_titulo": 24,
+    "preco": 22,
+    "frase": 24,
+    "subtitulo": 20,
+    "menu": 24,
+    "camada": 16,
+    "duvida": 20
+  }
+}
