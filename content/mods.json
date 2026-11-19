@@ -1,10 +1,64 @@
 {
   "mods": [
-    { "nome": "[Nome do mod]", "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]", "preco": "R$ [PREÇO]", "categoria": "Aventura", "versao": "1.20.1", "imagem": "", "link_compra": "" },
-    { "nome": "[Nome do mod]", "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]", "preco": "R$ [PREÇO]", "categoria": "Magia", "versao": "1.20.1", "imagem": "", "link_compra": "" },
-    { "nome": "[Nome do mod]", "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]", "preco": "R$ [PREÇO]", "categoria": "Tecnologia", "versao": "1.20.1", "imagem": "", "link_compra": "" },
-    { "nome": "[Nome do mod]", "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]", "preco": "R$ [PREÇO]", "categoria": "Mundo / Biomas", "versao": "1.20.1", "imagem": "", "link_compra": "" },
-    { "nome": "[Nome do mod]", "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]", "preco": "R$ [PREÇO]", "categoria": "Mobs", "versao": "1.20.1", "imagem": "", "link_compra": "" },
-    { "nome": "[Nome do mod]", "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]", "preco": "R$ [PREÇO]", "categoria": "Utilidade", "versao": "1.20.1", "imagem": "", "link_compra": "" }
+    {
+      "nome": "PHANTOM DIMENSION",
+      "descricao": "Uma arraia colossal de cinzas dorme sob o mundo. Invoque-a com um ritual de redstone!",
+      "preco": "R$ [PREÇO]",
+      "categoria": "Aventura",
+      "versao": "1.20.1",
+      "imagem": "/images/uploads/Dimensão Fantasma_ Mod Minecraft.png",
+      "link_compra": "",
+      "visivel": true
+    },
+    {
+      "nome": "[Nome do mod]",
+      "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]",
+      "preco": "R$ [PREÇO]",
+      "categoria": "Magia",
+      "versao": "1.20.1",
+      "imagem": "",
+      "link_compra": "",
+      "visivel": true
+    },
+    {
+      "nome": "[Nome do mod]",
+      "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]",
+      "preco": "R$ [PREÇO]",
+      "categoria": "Tecnologia",
+      "versao": "1.20.1",
+      "imagem": "",
+      "link_compra": "",
+      "visivel": true
+    },
+    {
+      "nome": "[Nome do mod]",
+      "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]",
+      "preco": "R$ [PREÇO]",
+      "categoria": "Mundo / Biomas",
+      "versao": "1.20.1",
+      "imagem": "",
+      "link_compra": "",
+      "visivel": true
+    },
+    {
+      "nome": "[Nome do mod]",
+      "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]",
+      "preco": "R$ [PREÇO]",
+      "categoria": "Mobs",
+      "versao": "1.20.1",
+      "imagem": "",
+      "link_compra": "",
+      "visivel": true
+    },
+    {
+      "nome": "[Nome do mod]",
+      "descricao": "[Descreva o mod em uma frase: o que ele adiciona ao jogo.]",
+      "preco": "R$ [PREÇO]",
+      "categoria": "Utilidade",
+      "versao": "1.20.1",
+      "imagem": "",
+      "link_compra": "",
+      "visivel": true
+    }
   ]
 }
